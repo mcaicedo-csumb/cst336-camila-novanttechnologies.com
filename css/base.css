@@ -65,28 +65,7 @@ nav a:hover {
     font-weight: 600;
 }
 
-/* ===== HERO LAYOUT ===== */
-main {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    padding-top: 60px;
-    padding-bottom: 120px;
-}
-
-figure {
-    margin: 0;
-}
-
-figure img {
-    width: 260px;
-    border-radius: 4px;
-}
-
-main div {
-    max-width: 520px;
-}
-
+/* ===== TYPOGRAPHY ===== */
 h2 {
     font-size: 1.4rem;
     margin-bottom: 20px;
@@ -95,12 +74,6 @@ h2 {
 
 p {
     margin-bottom: 18px;
-}
-
-/* ===== ABOUT PAGE BASE ===== */
-#content {
-    padding-top: 60px;
-    padding-bottom: 120px;
 }
 
 /* ===== TABLE BASE ===== */

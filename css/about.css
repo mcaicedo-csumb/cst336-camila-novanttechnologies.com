@@ -1,0 +1,8 @@
+#content {
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+.table-row:hover {
+    background-color: #f9fafb;
+}

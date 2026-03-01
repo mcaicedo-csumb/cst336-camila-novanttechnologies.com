@@ -1,0 +1,21 @@
+/* ===== HERO LAYOUT ===== */
+main {
+    display: flex;            /* REQUIRED FOR LAB */
+    align-items: center;
+    gap: 80px;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 260px;
+    border-radius: 4px;
+}
+
+main div {
+    max-width: 520px;
+}
