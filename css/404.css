@@ -1,10 +1,55 @@
-main {
-    padding-top: 120px;
-    padding-bottom: 120px;
+/* ===== 404 PAGE ===== */
+
+.error-page {
+    position: relative;
+    padding: 140px 0;
     text-align: center;
+    overflow: hidden;
 }
 
-h2 {
+/* Massive background 404 */
+.error-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12rem;
+    font-weight: 700;
+    color: #e5e7eb;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Foreground content */
+.error-content {
+    position: relative;
+    z-index: 2;
+}
+
+.error-content h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.error-content p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+/* Animated link */
+.back-home {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 30px;
+    background-color: #1f2933;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.back-home:hover {
+    background-color: #111827;
+    transform: translateY(-2px);
 }

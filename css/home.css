@@ -1,10 +1,12 @@
 /* ===== HERO LAYOUT ===== */
 main {
-    display: flex;            /* REQUIRED FOR LAB */
+    display: flex;
     align-items: center;
-    gap: 80px;
-    padding-top: 60px;
-    padding-bottom: 120px;
+    gap: 70px;
+    padding: 70px 60px;
+    background-color: #f9fafb;
+    border-radius: 14px;
+    margin-top: 20px;
 }
 
 figure {
@@ -12,10 +14,16 @@ figure {
 }
 
 figure img {
-    width: 260px;
-    border-radius: 4px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 main div {
     max-width: 520px;
+}
+
+main div h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
 }
