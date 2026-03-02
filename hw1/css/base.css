@@ -1,0 +1,72 @@
+/* ===== RESET ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #002855;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ===== NAVIGATION ===== */
+
+.nav-links {
+    list-style: none;
+    display: flex;              /* REQUIRED FLEX */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #fdb813;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #fdb813;
+}
+
+/* ===== MAIN ===== */
+
+main {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+* {
+    cursor: url("../../img/otter.png"), auto;
+}
+/* ===== FOOTER ===== */
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 0.8rem;         /* Smaller font */
+    color: #666;               /* Different color */
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+footer img {
+    width: 120px;
+    display: block;
+    margin: 0 auto 10px auto;
+}

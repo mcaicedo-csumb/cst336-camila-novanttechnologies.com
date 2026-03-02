@@ -1,0 +1,17 @@
+/* ===== HOME PAGE STYLES ===== */
+
+.intro,
+.functions,
+.importance {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #002855;
+}
+
+ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
