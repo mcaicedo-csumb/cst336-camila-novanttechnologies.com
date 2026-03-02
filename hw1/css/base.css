@@ -125,8 +125,8 @@ footer {
     margin-top: auto;
     padding-top: 100px;
     padding-bottom: 70px;
-    font-size: 0.75rem;         /* rubric requirement */
-    color: var(--muted);        /* rubric requirement */
+    font-size: 0.75rem;
+    color: var(--muted);
     border-top: 1px solid var(--border);
 }
 
@@ -135,28 +135,10 @@ footer img {
     margin-bottom: 18px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== IFRAME FIX ===== */
 
-@media (max-width: 600px) {
-
-    header,
-    nav,
-    main,
-    footer {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    section {
-        margin-bottom: 70px;
-    }
+iframe {
+    width: 100%;
 }
+
+/* ===== RESPONSIVE ===== */
