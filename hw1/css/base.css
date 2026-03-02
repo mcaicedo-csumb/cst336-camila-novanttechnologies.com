@@ -1,72 +1,162 @@
-/* ===== RESET ===== */
+:root {
+    --text: #111111;
+    --muted: #666666;
+    --border: #e6e6e6;
+}
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html {
+    height: 100%;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #ffffff;
+    color: var(--text);
+    line-height: 1.8;
+    cursor: url("../../img/otter.png"), auto;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* ===== LAYOUT ===== */
+
+header,
+nav,
+main,
+footer {
+    max-width: 920px;           /* widened from 760 */
+    margin: 0 auto;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 /* ===== HEADER ===== */
 
 header {
-    background-color: #002855;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    padding-top: 110px;         /* more breathing room */
+    padding-bottom: 50px;
 }
 
-/* ===== NAVIGATION ===== */
-
-.nav-links {
-    list-style: none;
-    display: flex;              /* REQUIRED FLEX */
-    justify-content: center;
-    gap: 30px;
-    margin-top: 15px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
+h1 {
+    font-size: 2.7rem;
     font-weight: 500;
+    margin: 0;
 }
 
-.nav-links a:hover {
-    color: #fdb813;
+/* ===== NAV ===== */
+
+nav {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 30px;
+    margin-bottom: 80px;        /* increased spacing */
 }
 
-.nav-links a.active {
-    border-bottom: 2px solid #fdb813;
+nav a {
+    text-decoration: none;
+    color: var(--muted);
+    margin-right: 30px;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
-/* ===== MAIN ===== */
+nav a:hover {
+    color: var(--text);
+}
 
-main {
-    padding: 40px;
-    max-width: 1000px;
-    margin: 0 auto;
+.active {
+    color: var(--text);
+    font-weight: 600;
 }
-* {
-    cursor: url("../../img/otter.png"), auto;
+
+/* ===== CONTENT ===== */
+
+section {
+    margin-bottom: 100px;       /* stronger vertical rhythm */
 }
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 26px;
+    font-size: 1.1rem;          /* slightly larger text */
+}
+
+/* ===== LISTS ===== */
+
+ul {
+    padding-left: 22px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+/* ===== TABLES ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 35px;
+}
+
+th, td {
+    padding: 18px 0;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+th {
+    font-weight: 600;
+}
+
 /* ===== FOOTER ===== */
 
 footer {
-    margin-top: 60px;
-    text-align: center;
-    font-size: 0.8rem;         /* Smaller font */
-    color: #666;               /* Different color */
-    padding: 20px;
-    border-top: 1px solid #ddd;
+    margin-top: auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    font-size: 0.75rem;         /* rubric requirement */
+    color: var(--muted);        /* rubric requirement */
+    border-top: 1px solid var(--border);
 }
 
 footer img {
-    width: 120px;
-    display: block;
-    margin: 0 auto 10px auto;
+    width: 110px;
+    margin-bottom: 18px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 600px) {
+
+    header,
+    nav,
+    main,
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        margin-bottom: 70px;
+    }
 }
