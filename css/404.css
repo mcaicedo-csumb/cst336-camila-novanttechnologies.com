@@ -2,7 +2,8 @@
 
 .error-page {
     position: relative;
-    padding: 140px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
     overflow: hidden;
 }
@@ -52,4 +53,57 @@
 .back-home:hover {
     background-color: #111827;
     transform: translateY(-2px);
+}
+
+/* ========================= */
+/* ===== TABLET ===== */
+/* ========================= */
+
+@media (max-width: 900px) {
+
+    .error-background {
+        font-size: 9rem;
+    }
+
+    .error-page {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+/* ========================= */
+/* ===== PHONE ===== */
+/* ========================= */
+
+@media (max-width: 600px) {
+
+    .error-page {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        min-height: auto;
+    }
+
+    .error-background {
+        font-size: 5rem;
+        opacity: 0.45;
+    }
+
+    .error-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .error-content p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .back-home {
+        padding: 7px 16px;
+        font-size: 0.85rem;
+    }
+
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }

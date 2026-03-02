@@ -1,4 +1,9 @@
-/* ===== GLOBAL RESET ===== */
+/* ===== GLOBAL STRUCTURE ===== */
+
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,6 +11,15 @@ body {
     color: #1f2933;
     line-height: 1.65;
     cursor: url("../img/otter.png"), auto;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* allow content to expand normally */
+main,
+#content {
+    flex: 1;
 }
 
 a,
@@ -16,11 +30,18 @@ select {
     cursor: url("../img/otter.png"), pointer;
 }
 
+/* Make images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* ===== CONTAINER SYSTEM ===== */
+
 header,
 nav,
 main,
-#content,
+content,
 footer {
     max-width: 1000px;
     margin: 0 auto;
@@ -29,6 +50,7 @@ footer {
 }
 
 /* ===== HEADER ===== */
+
 header {
     padding-top: 30px;
     padding-bottom: 6px;
@@ -42,6 +64,7 @@ h1 {
 }
 
 /* ===== NAVIGATION ===== */
+
 nav {
     padding-top: 12px;
     padding-bottom: 20px;
@@ -68,6 +91,7 @@ nav a:hover {
 }
 
 /* ===== TYPOGRAPHY ===== */
+
 h2 {
     font-size: 1.4rem;
     margin-bottom: 20px;
@@ -79,6 +103,7 @@ p {
 }
 
 /* ===== TABLE BASE ===== */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -96,6 +121,7 @@ td {
 }
 
 /* ===== LIST BASE ===== */
+
 ul {
     padding-left: 18px;
 }
@@ -105,7 +131,9 @@ ul {
 }
 
 /* ===== FOOTER ===== */
+
 footer {
+    margin-top: auto;   /* pushes footer down on short pages */
     padding-top: 60px;
     padding-bottom: 60px;
     font-size: 0.75rem;
@@ -166,9 +194,9 @@ footer img {
     }
 
     nav a {
-        display: inline-block;
-        margin-right: 15px;
-        font-size: 0.85rem;
+        display: block;
+        margin: 8px 0;
+        font-size: 0.95rem;
     }
 
     h2 {
